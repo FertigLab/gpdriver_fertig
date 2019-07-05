@@ -22,5 +22,6 @@ Installation on GenePattern
 
 Open a new terminal and run these two commands:
 
-% /opt/conda/envs/python3.6/bin/pip install git+https://github.com/FertigLab/gpdriver_fertig.git
-% /opt/conda/envs/python3.7/bin/pip install git+https://github.com/FertigLab/gpdriver_fertig.git
+::
+  /opt/conda/envs/python3.6/bin/pip install git+https://github.com/FertigLab/gpdriver_fertig.git
+  /opt/conda/envs/python3.7/bin/pip install git+https://github.com/FertigLab/gpdriver_fertig.git
