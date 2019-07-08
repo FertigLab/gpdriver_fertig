@@ -23,5 +23,9 @@ def updateKernels():
         urllib.request.urlretrieve(url, fname)
         unpackTarfile(fname, tmpdirname)
         install_dir = tmpdirname + '/FertigCondaEnvironments/'
-        subprocess.call(install_dir + 'install.sh', cwd=install_dir)
+        p = subprocess.call(install_dir + 'install.sh', cwd=install_dir, stdout=subprocess.PIPE)
+        while p.poll() is None: # redirect stdout
+            l = p.stdout.readline()
+            print(l)
+        print(p.stdout.read())
 
